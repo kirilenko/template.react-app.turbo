@@ -18,6 +18,7 @@ const App: FC = () => (
       </span>
     </AppStyle>
     <span className="hidden">{env.VITE_TIMESTAMP}</span>
+    <span className="hidden">{env.VITE_GLOBAL_KEY}</span>
   </>
 )
 

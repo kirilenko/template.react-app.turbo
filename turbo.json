@@ -16,7 +16,5 @@
     "preview": {
       "dependsOn": ["^build"]
     }
-  },
-  "globalEnv": [],
-  "globalDependencies": [".env"]
+  }
 }
