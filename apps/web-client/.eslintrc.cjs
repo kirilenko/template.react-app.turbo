@@ -118,7 +118,7 @@ const rules = {
 
 const extendsDict = {
   airbnb: ['airbnb', 'airbnb-typescript'],
-  base: ['eslint:recommended'],
+  base: ['eslint:recommended', 'turbo'],
   prettier: ['prettier'],
   typescript: ['plugin:@typescript-eslint/recommended'],
   react: ['plugin:react/recommended', 'plugin:react-hooks/recommended'],

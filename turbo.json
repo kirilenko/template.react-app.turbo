@@ -1,6 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
+  "tasks": {
     "clean": {
       "cache": false
     },
@@ -8,10 +8,7 @@
       "cache": false,
       "persistent": true
     },
-    "format": {
-      "cache": false,
-      "persistent": true
-    },
+    "format": {},
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]

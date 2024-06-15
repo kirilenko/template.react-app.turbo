@@ -15,8 +15,9 @@
   "devDependencies": {
     "prettier": "2",
     "process": "^0.11.10",
-    "turbo": "^1.13.2"
+    "turbo": "^2.0.4"
   },
+  "packageManager": "pnpm@9.3.0",
   "eslintIgnore": [
     "**/dist/*",
     "**/node_modules/*",
