@@ -1,0 +1,25 @@
+{
+  "name": "template.react-app.turbo",
+  "version": "0.0.0",
+  "description": "A template for creating React applications with Turbo",
+  "author": "Kirilenko",
+  "license": "MIT",
+  "scripts": {
+    "clean": "turbo clean && rm -rf node_modules",
+    "setup": "./scripts/nvm-use.sh && pnpm i && pnpm audit",
+    "dev": "turbo dev",
+    "format": "turbo format",
+    "build": "turbo build --filter=template.react-app.turbo.web-client",
+    "preview": "turbo preview --filter=template.react-app.turbo.web-client"
+  },
+  "devDependencies": {
+    "prettier": "2",
+    "process": "^0.11.10",
+    "turbo": "^1.13.2"
+  },
+  "eslintIgnore": [
+    "**/dist/*",
+    "**/node_modules/*",
+    "**/.turbo/**"
+  ]
+}
