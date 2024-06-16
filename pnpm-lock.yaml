@@ -54,6 +54,9 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@repo/tailwind-config':
+        specifier: workspace:*
+        version: link:../../packages/tailwind-config
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
@@ -171,6 +174,8 @@ importers:
       eslint-plugin-sort-keys-fix:
         specifier: ^1.1.2
         version: 1.1.2
+
+  packages/tailwind-config: {}
 
   packages/typescript-config: {}
 

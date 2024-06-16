@@ -14,7 +14,7 @@ const App: FC = () => (
     <AppStyle>
       <img src={viteLogo} className="logo" alt="Vite logo" />
       <span>
-        template.<span className="text-red-300">react</span>-app.turbo
+        template.<span className="text-fun">react</span>-app.turbo
       </span>
     </AppStyle>
     <span className="hidden">{env.VITE_TIMESTAMP}</span>
