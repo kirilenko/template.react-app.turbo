@@ -1,17 +1,6 @@
 {
   "compilerOptions": {
-    "allowJs": false,
-    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "esModuleInterop": false,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "noEmit": true,
     "paths": {
       "@app": ["./src/app"],
       "@app/*": ["./src/app/*"],
@@ -20,14 +9,10 @@
       "@pages/*": ["./src/pages/*"],
       "@public/*": ["/*"],
       "@shared/*": ["./src/shared/*"]
-    },
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "ESNext",
-    "types": ["vite/client", "node"],
-    "useDefineForClassFields": true
+    }
   },
+  "exclude": ["node_modules"],
+  "extends": "@repo/typescript-config/react-app.json",
   "include": ["./.*.js", "./.*.ts", "./*.js", "./*.ts", "./src", "./types"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
