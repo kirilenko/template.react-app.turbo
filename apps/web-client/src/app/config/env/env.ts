@@ -1,4 +1,4 @@
-export const envList = ['VITE_TIMESTAMP', 'VITE_GLOBAL_KEY'] as const
+export const envList = ['VITE_GLOBAL_KEY', 'VITE_TIMESTAMP'] as const
 
 type EnvKey = typeof envList[number]
 

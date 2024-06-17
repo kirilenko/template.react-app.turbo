@@ -1,11 +1,13 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["VITE_GLOBAL_KEY"],
   "tasks": {
     "clean": {
       "cache": false
     },
     "dev": {
       "cache": false,
+      "env": ["VITE_GLOBAL_KEY"],
       "persistent": true
     },
     "format": {},
@@ -14,7 +16,8 @@
       "outputs": ["dist/**"]
     },
     "preview": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["build"],
+      "env": ["VITE_GLOBAL_KEY"]
     }
   }
 }
