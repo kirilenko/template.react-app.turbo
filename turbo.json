@@ -1,13 +1,13 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalEnv": ["VITE_GLOBAL_KEY"],
+  "globalEnv": ["VITE_GLOBAL_KEY", "VITE_GLOBAL_KEY_FROM_ADDITIONAL_ENV"],
   "tasks": {
     "clean": {
       "cache": false
     },
     "dev": {
       "cache": false,
-      "env": ["VITE_GLOBAL_KEY"],
+      "env": ["VITE_GLOBAL_KEY", "VITE_GLOBAL_KEY_FROM_ADDITIONAL_ENV"],
       "persistent": true
     },
     "format": {},
@@ -17,7 +17,7 @@
     },
     "preview": {
       "dependsOn": ["build"],
-      "env": ["VITE_GLOBAL_KEY"]
+      "env": ["VITE_GLOBAL_KEY", "VITE_GLOBAL_KEY_FROM_ADDITIONAL_ENV"]
     }
   }
 }

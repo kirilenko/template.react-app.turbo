@@ -1,9 +1,16 @@
-export const envList = ['VITE_GLOBAL_KEY', 'VITE_TIMESTAMP'] as const
+export const envList = [
+  'VITE_GLOBAL_KEY',
+  'VITE_GLOBAL_KEY_FROM_ADDITIONAL_ENV',
+  'VITE_LOCAL_KEY',
+  'VITE_TIMESTAMP',
+] as const
 
 type EnvKey = typeof envList[number]
 
 const envConfig: Record<EnvKey, 'boolean' | 'number' | 'string'> = {
   VITE_GLOBAL_KEY: 'string',
+  VITE_GLOBAL_KEY_FROM_ADDITIONAL_ENV: 'string',
+  VITE_LOCAL_KEY: 'string',
   VITE_TIMESTAMP: 'string',
 }
 
