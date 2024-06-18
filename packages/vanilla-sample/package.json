@@ -1,0 +1,20 @@
+{
+  "name": "@repo/vanilla-sample",
+  "version": "0.1.0",
+  "type": "module",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "format": "eslint . --fix 'src/**/**.{ts,tsx}' --report-unused-disable-directives --max-warnings 0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "prettier": ">=2.2.0 <2.3",
+    "typescript": "^5.2.2"
+  }
+}

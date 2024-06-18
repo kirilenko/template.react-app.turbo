@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "extends": "@repo/typescript-config/vanilla.json",
+  "include": ["./src"],
+  "exclude": ["node_modules"]
+}
