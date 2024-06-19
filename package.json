@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "turbo clean && rm -rf node_modules",
     "setup": "./scripts/nvm-use.sh && pnpm i && pnpm audit",
-    "dev": "dotenvx run --env-file=.env --env-file=.env.local -- turbo dev",
+    "dev": "dotenvx run --env-file=.env --env-file=.env.local -- turbo dev --filter=...[apps/web-client]",
     "format": "turbo format",
     "build": "turbo build --filter=...[apps/web-client]",
     "preview": "dotenvx run --env-file=.env --env-file=.env.local -- turbo preview --filter=...[apps/web-client]"

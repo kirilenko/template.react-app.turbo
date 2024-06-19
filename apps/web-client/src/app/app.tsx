@@ -3,6 +3,7 @@ import { Global } from '@emotion/react'
 
 import { env } from '@app/config'
 import viteLogo from '@public/vite.svg'
+import { HelloWorld } from '@repo/ui'
 import { log } from '@repo/vanilla-sample'
 
 import './styles/tailwind.css'
@@ -17,9 +18,7 @@ const App: FC = () => {
       <Global styles={GlobalStyles} />
       <AppStyle>
         <img src={viteLogo} className="logo" alt="Vite logo" />
-        <span>
-          template.<span className="text-fun">react</span>-app.turbo
-        </span>
+        <HelloWorld />
       </AppStyle>
       <span className="hidden">{env.VITE_TIMESTAMP}</span>
       <span className="hidden">{env.VITE_LOCAL_KEY}</span>

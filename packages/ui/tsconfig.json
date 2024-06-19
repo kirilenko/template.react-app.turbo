@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@app": ["./src/app"],
+      "@app/*": ["./src/app/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@public/*": ["/*"],
+      "@shared/*": ["./src/shared/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "src/shared/ui/index.ts"
+    ]
+  },
+  "exclude": ["node_modules"],
+  "extends": "@repo/typescript-config/react-app.json",
+  "include": ["./.*.js", "./.*.ts", "./*.js", "./*.ts", "./src", "./types"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

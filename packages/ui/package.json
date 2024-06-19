@@ -1,24 +1,26 @@
 {
-  "name": "template.react-app.turbo.web-client",
-  "description": "A Vite template for React apps with TypeScript, ESLint, Prettier, and React",
+  "name": "@repo/ui",
+  "description": "UI components for the project",
   "author": "Kirilenko",
   "license": "MIT",
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "types": "./src/shared/ui/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/shared/ui/index.ts"
+    }
+  },
   "scripts": {
-    "dev": "dotenvx run --env-file=.env --env-file=.env.local -- vite --port 3001",
+    "dev": "dotenvx run --env-file=.env --env-file=.env.local -- vite --port 3002",
     "lint:styles": "stylelint --fix 'src/**/**.{css,style.ts}'",
     "lint:scripts": "eslint . --fix 'src/**/**.{ts,tsx}' --report-unused-disable-directives --max-warnings 0",
-    "format": "pnpm lint:styles && pnpm lint:scripts && scripts/postformat.sh",
-    "build": "tsc && vite build",
-    "preview": "dotenvx run --env-file=.env --env-file=.env.local -- vite preview"
+    "format": "pnpm lint:styles && pnpm lint:scripts && scripts/postformat.sh"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@repo/ui": "workspace:*",
-    "@repo/vanilla-sample": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^3.3.3",
