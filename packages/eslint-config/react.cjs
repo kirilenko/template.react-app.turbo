@@ -1,3 +1,4 @@
+/** @type {import("eslint").Linter.Config} */
 const internalPackages = '@app|@entities|@modules|@pages|@public|@repo|@shared'
 
 const styleExtensions = '\\.style$|\\.s?css$'
@@ -78,10 +79,7 @@ const rules = {
 
   'react/require-default-props': 'off', // - disable SomeComponent.defaultProps defining
 
-  'react-refresh/only-export-components': [
-    'warn',
-    { allowConstantExport: true },
-  ],
+  'react-refresh/only-export-components': 'off',
 
   'simple-import-sort/imports': [
     'warn',

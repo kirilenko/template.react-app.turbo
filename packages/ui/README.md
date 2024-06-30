@@ -9,3 +9,4 @@ It includes the following:
 
 - [Emotion](https://emotion.sh/docs/introduction)
 - [Tailwind CSS](https://tailwindcss.com/docs)
+- [Storybook](https://storybook.js.org/docs/react/get-started/introduction)

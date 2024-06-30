@@ -7,13 +7,13 @@
   "scripts": {
     "clean": "turbo clean && rm -rf node_modules",
     "setup": "./scripts/nvm-use.sh && pnpm i && pnpm audit",
-    "dev": "dotenvx run --env-file=.env --env-file=.env.local -- turbo dev --filter=...[apps/web-client]",
+    "dev": "dotenvx run --env-file=.env --env-file=.env.local -- turbo dev -F=./apps/web-client -F=./packages/ui",
     "format": "turbo format",
     "build": "turbo build --filter=...[apps/web-client]",
     "preview": "dotenvx run --env-file=.env --env-file=.env.local -- turbo preview --filter=...[apps/web-client]"
   },
   "devDependencies": {
-    "@dotenvx/dotenvx": "^0.44.5",
+    "@dotenvx/dotenvx": "^1.4.0",
     "prettier": "2",
     "process": "^0.11.10",
     "turbo": "^2.0.4"

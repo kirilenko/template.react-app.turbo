@@ -27,7 +27,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/plugin-transform-react-jsx": "^7.19.0",
-    "@dotenvx/dotenvx": "^0.44.5",
+    "@dotenvx/dotenvx": "^1.4.0",
     "@emotion/babel-plugin-jsx-pragmatic": "^0.2.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",

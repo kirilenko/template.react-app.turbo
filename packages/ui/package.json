@@ -13,10 +13,12 @@
     }
   },
   "scripts": {
-    "dev": "dotenvx run --env-file=.env --env-file=.env.local -- vite --port 3002",
+    "dev": "dotenvx run --env-file=.env --env-file=.env.local -- storybook dev -p 3002",
     "lint:styles": "stylelint --fix 'src/**/**.{css,style.ts}'",
     "lint:scripts": "eslint . --fix 'src/**/**.{ts,tsx}' --report-unused-disable-directives --max-warnings 0",
-    "format": "pnpm lint:styles && pnpm lint:scripts && scripts/postformat.sh"
+    "format": "pnpm lint:styles && pnpm lint:scripts && scripts/postformat.sh",
+    "build": "tsc && vite build",
+    "preview-storybook": "serve storybook-static"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -29,11 +31,16 @@
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/plugin-transform-react-jsx": "^7.19.0",
-    "@dotenvx/dotenvx": "^0.44.5",
+    "@dotenvx/dotenvx": "^1.4.0",
     "@emotion/babel-plugin-jsx-pragmatic": "^0.2.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@storybook/addon-actions": "^8.1.11",
+    "@storybook/addon-essentials": "^8.1.11",
+    "@storybook/addon-links": "^8.1.11",
+    "@storybook/react": "^8.1.11",
+    "@storybook/react-vite": "^8.1.11",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/babel__core": "^7.20.1",
     "@types/node": "^20.4.2",
@@ -46,6 +53,8 @@
     "postcss-syntax": "^0.36.2",
     "prettier": ">=2.2.0 <2.3",
     "prettier-plugin-tailwindcss": "^0.3.0",
+    "serve": "^14.2.1",
+    "storybook": "^8.1.10",
     "stylelint": "^16.6.1",
     "stylelint-config-recommended": "^14.0.0",
     "stylelint-order": "^6.0.3",

@@ -1,5 +1,11 @@
 import { FC } from 'react'
 
-export const HelloWorld: FC = () => (
-  <span className="m-2 text-xl font-bold text-fun">Hello, World!</span>
+import { HelloWorldStyle } from './hello-world.style'
+
+type Props = {
+  color?: string
+}
+
+export const HelloWorld: FC<Props> = ({ color }) => (
+  <HelloWorldStyle {...{ color }}>Hello, World!</HelloWorldStyle>
 )
