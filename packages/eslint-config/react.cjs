@@ -61,11 +61,11 @@ const rules = {
 
   'no-unused-vars': 'warn',
 
-  'prettier/prettier': [
-    'error',
-    {},
-    { endOfLine: 'auto', usePrettierrc: true },
-  ],
+  // 'prettier/prettier': [
+  //   'error',
+  //   {},
+  //   { endOfLine: 'auto', usePrettierrc: true },
+  // ],
 
   'react/function-component-definition': 'off', // - for defining component as a function-declaration
 
